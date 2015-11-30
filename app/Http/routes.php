@@ -12,3 +12,10 @@
 */
 
 Route::get('/','Index@index');
+
+Route::get('auth/login', 'Authentication@login');
+Route::post('auth/login', 'Authentication@authenticate');
+Route::get('auth/logout', 'Authentication@logout');
+
+// Registration routes...
+Route::post('/register', 'Auth@register');

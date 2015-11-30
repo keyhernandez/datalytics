@@ -48,10 +48,10 @@
 		 <li class="dropdown"> <a id="main-menu-toggle" href="#main-menu"  class="" > <div class="iconset top-menu-toggle-white"></div> </a> </li>		 
 		</ul>
       <!-- BEGIN LOGO -->	
-      <a href="index.html"><img src="{{asset('img/logo.png')}}" class="logo" alt=""  data-src="{{asset('img/logo.png')}}" data-src-retina="{{asset('img/logo2x.png')}}" width="106" height="21"/></a>
+      <a href="{{url('/')}}"><img src="{{asset('img/logo.png')}}" class="logo" alt=""  data-src="{{asset('img/logo.png')}}" data-src-retina="{{asset('img/logo2x.png')}}" width="106" height="21"/></a>
       <!-- END LOGO --> 
       <ul class="nav pull-right notifcation-center">	
-        <li class="dropdown" id="header_task_bar"> <a href="index.html" class="dropdown-toggle active" data-toggle=""> <div class="iconset top-home"></div> </a> </li>
+        <li class="dropdown" id="header_task_bar"> <a href="{{url('/')}}" class="dropdown-toggle active" data-toggle=""> <div class="iconset top-home"></div> </a> </li>
         <li class="dropdown" id="header_inbox_bar" > <a href="email.html" class="dropdown-toggle" > <div class="iconset top-messages"></div>  <span class="badge" id="msgs-badge">2</span> </a></li>
 		<li class="dropdown" id="portrait-chat-toggler" style="display:none"> <a href="#sidr" class="chat-menu-toggle"> <div class="iconset top-chat-white "></div> </a> </li>        
       </ul>
@@ -80,19 +80,11 @@
 		  </ul>
 	  </div>
 	 <!-- END TOP NAVIGATION MENU -->
-	 <!-- BEGIN CHAT TOGGLER 
+	 <!-- BEGIN CHAT TOGGLER -->
       <div class="pull-right"> 
 		<div class="chat-toggler">	
-				<a href="#" class="dropdown-toggle" id="my-task-list" data-placement="bottom"  data-content='' data-toggle="dropdown" data-original-title="Notifications">
-					<div class="user-details"> 
-						<div class="username">
-							<span class="badge badge-important">3</span> 
-							John <span class="bold">Smith</span>									
-						</div>						
-					</div> 
-					<div class="iconset top-down-arrow"></div>
-				</a>	
-				<div id="notification-list" style="display:none">
+				
+<!--				<div id="notification-list" style="display:none">
 					<div style="width:300px">
 						  <div class="notification-messages info">
 									<div class="user-profile">
@@ -149,9 +141,10 @@
 				</div>
 				<div class="profile-pic"> 
 					<img src="{{asset('img/profiles/avatar_small.jpg')}}"  alt="" data-src="{{asset('img/profiles/avatar_small.jpg')}}" data-src-retina="{{asset('img/profiles/avatar_small2x.jpg')}}" width="35" height="35" /> 
-				</div>       			
+				</div>  -->     			
 			</div>
 		 <ul class="nav quick-section ">
+                     <li class="quicklinks"></li>
 			<li class="quicklinks"> 
 				<a data-toggle="dropdown" class="dropdown-toggle  pull-right " href="#" id="user-options">						
 					<div class="iconset top-settings-dark "></div> 	
@@ -164,11 +157,11 @@
                   <li><a href="email.html"> My Inbox&nbsp;&nbsp;<span class="badge badge-important animated bounceIn">2</span></a>
                   </li>
                   <li class="divider"></li>                
-                  <li><a href="login.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+                  <li><a href="{{url('auth/logout')}}"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
                </ul>
 			</li> 
-			<li class="quicklinks"> <span class="h-seperate"></span></li> 
-			<li class="quicklinks"> 	
+			
+<!--			<li class="quicklinks"> 	
 			<a id="chat-menu-toggle" href="#sidr" class="chat-menu-toggle" ><div class="iconset top-chat-dark "><span class="badge badge-important hide" id="chat-message-count">1</span></div>
 			</a> 
 				<div class="simple-chat-popup chat-menu-toggle hide" >
@@ -179,10 +172,10 @@
 						</div>
 					</div>
 				</div>
-			</li> 
-		</ul>
+			</li> -->
+		</ul> 
       </div>
-	    END CHAT TOGGLER -->
+	 <!--    END CHAT TOGGLER -->
       </div> 
       <!-- END TOP NAVIGATION MENU --> 
    
@@ -211,7 +204,7 @@
    <!-- BEGIN SIDEBAR MENU -->	
 	<p class="menu-title">BROWSE <span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
     <ul>	
-      <li class="start active "> <a href="index.html"> <i class="icon-custom-home"></i> <span class="title">Dashboard</span> <span class="selected"></span> <span class="badge badge-important pull-right">5</span></a> </li>
+      <li class="start active "> <a href="{{url('/')}}"> <i class="icon-custom-home"></i> <span class="title">Dashboard</span> <span class="selected"></span> <span class="badge badge-important pull-right">5</span></a> </li>
 	  <li class=""> <a href="email.html"> <i class="fa fa-envelope"></i> <span class="title">Email</span>  <span class=" badge badge-disable pull-right ">203</span></a> </li>      
 	  <li class=""> <a href="../frontend/index.html"> <i class="fa fa-flag"></i>  <span class="title">Frontend</span></a></li>      
       <li class=""> <a href="javascript:;"> <i class="icon-custom-ui"></i> <span class="title">UI Elements</span> <span class="arrow "></span> </a>
