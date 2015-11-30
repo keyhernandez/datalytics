@@ -353,7 +353,7 @@
       <div class="modal-body"> Widget settings form goes here </div>
     </div>
     <div class="clearfix"></div>
-   
+   @yield('content')
 </div>
 <!-- BEGIN CHAT --> 
 <div id="sidr" class="chat-window-wrapper">

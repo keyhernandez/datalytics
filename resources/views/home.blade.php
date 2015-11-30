@@ -3,7 +3,6 @@
 @section('title', 'Datalytics')
 
 @section('content')       
-
  <div class="content">  
 		<div class="page-title">	
 			<h3>Dashboard </h3>		
